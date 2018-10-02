@@ -65,17 +65,20 @@ span {
 
 .aboutme, .skills, .image-box {
   background-color: inherit;
-  border: 1px solid black;
   height: 100%;
   width: 33.33%;
 }
 
-.skills {
+.aboutme, .skills {
   display: flex;
   align-items: center;
 }
 
-.skills > div {
+.aboutme > div {
+  padding-left: 55px
+}
+
+.aboutme > div, .skills > div {
   background-color: inherit;
 }
 
