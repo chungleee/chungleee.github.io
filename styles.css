@@ -6,8 +6,28 @@
   margin: 0 auto;
 }
 
-.main {
-  height: 100vh;
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+nav a {
+  margin: auto 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.landing {
+  height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,4 +42,37 @@
 
 .intro span {
   color: #E94F37;
+}
+
+.aboutme {
+  background: #424242;
+  height: 500px;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+
+.description p {
+  background-color: inherit;
+  color: #FFFFFA;
+  width: 65%;
+}
+
+.image {
+  background-image: url(/img/image1.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: right;
+  height: 300px;
+  position: relative;
+  top: 100px;
+  right: 125px;
+  width: 300px;
 }
