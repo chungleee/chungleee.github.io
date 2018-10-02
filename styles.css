@@ -9,21 +9,32 @@
 nav {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-right: 50px;
   height: 50px;
   width: 100%;
 }
 
 nav a {
-  margin: auto 10px;
+  margin: auto 15px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.socials a {
+  padding: 0 10px;
 }
 
 .container {
   width: 80%;
   margin: auto;
+  display: flex;
 }
 
 .landing {
@@ -40,29 +51,42 @@ nav a {
   font-style: 400;
 }
 
-.intro span {
+span {
   color: #E94F37;
+  background-color: inherit;
 }
 
-.aboutme {
-  background: #424242;
+.description {
+  background: #CED3DC;
+  display: flex;
   height: 500px;
   width: 100%;
 }
 
-.description {
-  display: flex;
-  align-items: center;
+.aboutme, .skills, .image-box {
   background-color: inherit;
-  float: left;
+  border: 1px solid black;
   height: 100%;
-  width: 60%;
+  width: 33.33%;
 }
 
-.description p {
+.skills {
+  display: flex;
+  align-items: center;
+}
+
+.skills > div {
   background-color: inherit;
-  color: #FFFFFA;
-  width: 65%;
+}
+
+.skills h4 {
+  color: #E94F37;
+  font-family: 'Proza Libre', sans-serif;
+  font-style: 700;
+}
+
+.skills h4, p {
+  background-color: inherit;
 }
 
 .image {
@@ -73,6 +97,6 @@ nav a {
   height: 300px;
   position: relative;
   top: 100px;
-  right: 125px;
+  right: 55px;
   width: 300px;
 }
