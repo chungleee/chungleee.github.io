@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -17,7 +21,6 @@ nav {
 
 nav a {
   margin: auto 15px;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -102,4 +105,36 @@ span {
   top: 100px;
   right: 55px;
   width: 300px;
+}
+
+.projects {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  height: 90%;
+  widows: 100%;
+}
+
+.teaser-box {
+  background-image: url(/img/topfivrs-screens/topfivrs-landing.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
+  height: 200px;
+  min-width: 350px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.project-detail {
+  margin: auto;
+  max-width: 35%;
 }

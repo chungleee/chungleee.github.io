@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/swipebox.css">
   <title>Leon Chung - Web Developer</title>
 </head>
 <body>
@@ -69,5 +70,41 @@
         <div class="image"></div>
       </div>
   </div>
+
+  <div class="projects">
+    <div class="project">
+      <div class="teaser-box">
+      </div>
+      <div class="project-detail">
+        <h2><a href="https://topfivrs.herokuapp.com"><span>TopFivRs</span></a></h2>
+        <h5>Design - UI - Code</h5>
+        <br>
+        <p>TopFivRs (pronounced <em>top-fivers</em>) is a restaurant/bar/cafe search engine. It is built utilizing the MERN stack. You manually enter your address location or make use of the browser geolocation API and then fetches data from the Yelp API.</p>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+  <script src="lib/jquery-2.1.0.min.js"></script>
+  <script src="src/js/jquery.swipebox.min.js"></script>
+  <script>
+    $( '.teaser-box' ).click( function( e ) {
+      e.preventDefault();
+      $.swipebox( [
+        { href:'img/topfivrs-screens/topfivrs-landing.png', title:'Landing page' }, 
+        { href:'img/topfivrs-screens/topfivrs-register.png', title:'Registration is a must for demonstration purposes' }, 
+        { href:'img/topfivrs-screens/topfivrs-login.png', title:'Login is also a must to demonstrate auth flow' }, 
+        { href:'img/topfivrs-screens/topfivrs-search.png', title:'Search functionality with geolocation button' }, 
+        { href:'img/topfivrs-screens/topfivrs-results.png', title:'Results table with clickable rows' }, 
+        { href:'img/topfivrs-screens/topfivrs-results-modal.png', title:'Modal which displays business detail and google maps API' }, 
+        { href:'img/topfivrs-screens/topfivrs-favourites.png', title:'Favourites feature' }
+      ], {
+        hideBarsDelay: 3000,
+        loopAtEnd: true
+      } );
+    } );
+  </script>
 </body>
 </html>
