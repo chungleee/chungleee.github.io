@@ -109,7 +109,6 @@ span {
 
 .projects {
   align-items: center;
-  border: 1px solid black;
   display: flex;
   justify-content: flex-start;
   height: 300px;
@@ -126,7 +125,6 @@ span {
   background-image: url(img/topfivrs-screens/topfivrs-landing.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border: 1px solid black;
   box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
   height: 200px;
   min-width: 350px;
