@@ -293,3 +293,8 @@ html.swipebox-html.swipebox-touch {
   line-height: 43px;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+#swipebox-close, #swipebox-title, #swipebox-arrows, #swipebox-next, #swipebox-prev {
+  background-color: black;
+  color: white;
+}
