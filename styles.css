@@ -136,3 +136,15 @@ span {
   margin: auto;
   max-width: 35%;
 }
+
+@media (max-width: 400px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 1.2rem;
+  }
+}
