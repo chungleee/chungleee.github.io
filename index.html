@@ -4,77 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesv2.css">
   <link rel="stylesheet" href="src/css/swipebox.css">
   <title>Leon Chung - Web Developer</title>
 </head>
 <body>
   <div class="container">
-    <div class="socials">
+    <header>
       <a href="mailto:leon.karho.chung@gmail.com"><i class="fas fa-at"></i></a>
       <a href="https://www.linkedin.com/in/leonkhchung/"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/chungleee/"><i class="fab fa-github"></i></a>
       <a href="https://www.instagram.com/_eleeohen/"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/chungleeee"><i class="fab fa-facebook-square"></i></a>
-    </div>
-  </div>
-  <div class="landing">
-    <div class="intro">
-      <h1>Bonjour, I'm Leon</h1>
-      <h2>Web Developer with a focus on <span>Modern JavaScript</span></h2>
-    </div>
-  </div>
+    </header>
+    <main>
+      <div class="landing">
+        <h1>Bonjour, I'm Leon</h1>
+        <h3>A <span>Modern JavaScript</span> developer from Toronto</h3>
+      </div>
 
-  <div class="description">
-      <div class="aboutme">
-        <div>
-          <p>
-            I am a <span>Toronto-based</span> - mechanical engineer student dropout that chose to rekindle and branch into the world of web development.
-          </p>
-          <br>
-          <p>I am 90&percnt; self-taught in my 2 years of learning.</p>
-          <br>
-          <p>I enjoy both front-end and backend, and love building sites, apps and APIs.</p>
-        </div>
+      <div class="about-me">
+        <div class="image"></div>
+        <h3>Who am I?</h3>
+        <p>I'm an ex-athlete and a former engineering student that decided to branch into web development.</p>
+        <p>I find enjoyment in both front and back-end.</p>
+        <p><span>Let's work together</span></p>
       </div>
 
       <div class="skills">
-        <div>
-          <h4>Front-end</h4>
-          <p>HTML, CSS, JavaScript, React.js, Bulma.io</p>
-          <br>
-          <h4>Back-end</h4>
-          <p>Node.js (Express.js)</p>
-          <br>
-          <h4>Database</h4>
-          <p>NoSQL</p>
-          <br>
-          <h4>Next to learn</h4>
-          <p>Redux, TypeScript</p>
+        <div class="skills-row">
+          <li>
+            <i class="fab fa-html5 fa-3x"></i>
+            <span>HTML</span>
+          </li>
+          <li>
+            <i class="fab fa-css3-alt fa-3x"></i>
+            <span>CSS</span>
+          </li>
+          <li>
+            <i class="fab fa-js-square fa-3x"></i>
+            <span>JavaScript</span>
+          </li>
+        </div>
+        <div class="skills-row">
+          <li>
+            <i class="fab fa-react fa-3x"></i>
+            <span>ReactJS</span>
+          </li>
+          <li>
+            <i class="fab fa-node fa-3x"></i>
+            <span>NodeJS</span>
+          </li>
+          <li>
+            <i class="fas fa-database fa-3x"></i>
+            <span>NoSQL</span>
+          </li>
         </div>
       </div>
 
-      <div class="image-box">
-        <div class="image"></div>
-      </div>
-  </div>
+      <div class="projects">
+        <div class="teaser-box"></div>
 
-  <div class="projects">
-    <div class="project">
-      <div class="teaser-box">
+        <div class="project-detail inherit">
+          <h2 class='inherit'>
+            <a class='inherit' href="https://topfivrs.herokuapp.com">
+              <span class='inherit'>TopFivRs</span>
+            </a>
+          </h2>
+
+          <h5 class='inherit'>Design - UI - Code</h5>
+          <p class="inherit">
+            TopFivRs (pronounced <em class='inherit'>top-fivers</em>) is a restaurant/bar/cafe search engine.
+          </p>
+          <p class="inherit">It is built utilizing the MERN stack.</p>
+          <p class="inherit">
+            You manually enter your address location or make use of the browser geolocation API and then fetches data from the Yelp API.
+          </p>
+        </div> 
       </div>
-      <div class="project-detail">
-        <h2><a href="https://topfivrs.herokuapp.com"><span>TopFivRs</span></a></h2>
-        <h5>Design - UI - Code</h5>
-        <br>
-        <p>TopFivRs (pronounced <em>top-fivers</em>) is a restaurant/bar/cafe search engine.</p>
-        <p>It is built utilizing the MERN stack.</p>
-        <p> You manually enter your address location or make use of the browser geolocation API and then fetches data from the Yelp API.</p>
-      </div>
-    </div>
-  </div>  
+    </main>
+  </div>
 
 
 
