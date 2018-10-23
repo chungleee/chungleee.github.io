@@ -155,3 +155,9 @@ p {
 .inherit {
   background-color: inherit;
 }
+
+@media (min-width: 900px) {
+  .container {
+    margin: 1.5em auto;
+  }
+}

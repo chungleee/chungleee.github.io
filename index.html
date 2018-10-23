@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="src/css/swipebox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <title>Leon Chung - Web Developer</title>
 </head>
 <body>
@@ -93,6 +94,12 @@
   <script src="lib/jquery-2.1.0.min.js"></script>
   <script src="src/js/jquery.swipebox.min.js"></script>
   <script>
+    $('.teaser-box').hover(function () {
+      $(this).addClass('animated pulse infinite')
+    }, function() {
+      $(this).removeClass('animated pulse infinite')
+    })
+
     $( '.teaser-box' ).click( function( e ) {
       e.preventDefault();
       $.swipebox( [
