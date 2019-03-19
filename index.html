@@ -1,120 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="src/css/swipebox.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <title>Leon Chung - Web Developer</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <a href="mailto:leon.karho.chung@gmail.com"><i class="fas fa-at"></i></a>
-      <a href="https://www.linkedin.com/in/leonkhchung/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/chungleee/"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/_eleeohen/"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/chungleeee"><i class="fab fa-facebook-square"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Proza+Libre:700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Leon Chung - Web developer</title>
+  </head>
+  <body>
+    <header id="home" class="container">
+      <nav class="navbar">
+        <div class="navbar-logo"><a href="#home">leon<span>chung</span></a></div>
+        <ul class="navbar-menu">
+          <li class="navbar-menu-items"><a href="#projects">projects</a></li>
+          <li class="navbar-menu-items"><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <div class="greeting">
+        <h5 class="greeting-hello">
+          hello &middot; bonjours &middot; &#20320;&#22909;
+        </h5>
+        <p class="greeting-text">
+          I'm Leon <br />
+          <h5>Full Stack Web Developer based in Toronto</h5>
+        </p>
+      </div>
+      <a class='btn' href="#projects">view projects</a>
     </header>
-    <main>
-      <div class="landing">
-        <h1>Bonjour, I'm Leon</h1>
-        <h3>A <span>Modern JavaScript</span> developer based in Toronto</h3>
-      </div>
 
-      <div class="about-me">
-        <div class="image"></div>
-        <h3>Who am I?</h3>
-        <p>I'm an ex-athlete and a former engineering student that decided to branch into web development.</p>
-        <p>I find enjoyment in both front and back-end.</p>
-        <p><span>Let's work together</span></p>
-      </div>
-
-      <div class="skills">
-        <div class="skills-row">
-          <li>
-            <i class="fab fa-html5 fa-3x"></i>
-            <span>HTML</span>
-          </li>
-          <li>
-            <i class="fab fa-css3-alt fa-3x"></i>
-            <span>CSS</span>
-          </li>
-          <li>
-            <i class="fab fa-js-square fa-3x"></i>
-            <span>JavaScript</span>
-          </li>
-        </div>
-        <div class="skills-row">
-          <li>
-            <i class="fab fa-react fa-3x"></i>
-            <span>ReactJS</span>
-          </li>
-          <li>
-            <i class="fab fa-node fa-3x"></i>
-            <span>NodeJS</span>
-          </li>
-          <li>
-            <i class="fas fa-database fa-3x"></i>
-            <span>NoSQL</span>
-          </li>
-        </div>
-      </div>
-
-      <div class="projects">
-        <div class="teaser-box"></div>
-
-        <div class="project-detail inherit">
-          <h2 class='inherit'>
-            <a class='inherit' href="https://topfivrs.herokuapp.com">
-              <span class='inherit'>TopFivRs</span>
-            </a>
-          </h2>
-
-          <h5 class='inherit'>Design - UI - Code</h5>
-          <p class="inherit">Built utilizing the MERN stack.</p>
-          <p class="inherit">
-            TopFivRs (pronounced <em class='inherit'>top-fivers</em>) is a restaurant/bar/cafe search engine.
+    <section class="projects" id="projects">
+      <!-- topfivrs -->
+      <a class='project-link' href="https://topfivrs.herokuapp.com/">
+        <div class="project-container" id="topfivrs">
+          <h3 class="project-title">TopFivrs</h3>
+          <div class="tech-icons">
+            NodeJS &middot; ReactJS &middot; MongoDB &middot; Bulma &middot; JWT &middot; Yelp API
+          </div>
+          <!-- <p class="project-headline">
+            Mobile first location based search engine for restaurants &middot; bars &middot; cafes
+          </p> -->
+          <p class="project-headline">
+            Built a web app for the general food enthusiast looking to explore their top 5 options in their current area
           </p>
-          <p class="inherit">
-            You manually enter your address location or make use of the browser geolocation API and then fetches data from the Yelp API.
+          <a class='source-code' href="https://github.com/chungleee/topfivrs_prod">view source code</a>
+        </div>
+      </a>
+      <!-- whats the weather -->
+      <a class='project-link' href="https://wtweather.herokuapp.com/">
+        <div class="project-container" id="wtweather">
+          <h3 class="project-title">What's The Weather</h3>
+          <div class="tech-icons">
+              HTML5 &middot; CSS3 &middot; NodeJS &middot; ReactJS &middot; Google Maps API
+          </div>
+          <p class="project-headline">
+            Developed a web app with 'mobile first' approach.
           </p>
-        </div> 
+          <p class='project-headline'>Tells the user if they are missing a sunny day or if they should take an umbrella out</p>
+          <a class='source-code' href="https://github.com/chungleee/whats-the-weather">view source code</a>
+        </div>
+      </a>
+    </section>
+
+    <section class="contact container" id="contact">
+      <div class="contact-intro">
+        <div>
+          <p>I am currently 
+          <span class='highlight'>available for hire</span>
+          </p>
+          <br>
+          <p>
+          If you would like to discuss work or just to chat about the meaning of life, please feel free to write me at <a class='highlight'href="mailto:leon.karho.chung@gmail.com">leon.karho.chung@gmail.com</a>
+          </p> 
+        </div>
       </div>
-    </main>
-  </div>
-
-
-
-
-  <script src="lib/jquery-2.1.0.min.js"></script>
-  <script src="src/js/jquery.swipebox.min.js"></script>
-  <script>
-    $('.teaser-box').hover(function () {
-      $(this).addClass('animated pulse infinite')
-    }, function() {
-      $(this).removeClass('animated pulse infinite')
-    })
-
-    $( '.teaser-box' ).click( function( e ) {
-      e.preventDefault();
-      $.swipebox( [
-        { href:'img/topfivrs-screens/topfivrs-landing.png', title:'Landing page' }, 
-        { href:'img/topfivrs-screens/topfivrs-register.png', title:'Registration is a must for demonstration purposes' }, 
-        { href:'img/topfivrs-screens/topfivrs-login.png', title:'Login is also a must to demonstrate auth flow' }, 
-        { href:'img/topfivrs-screens/topfivrs-search.png', title:'Search functionality with geolocation button' }, 
-        { href:'img/topfivrs-screens/topfivrs-results.png', title:'Results table with clickable rows' }, 
-        { href:'img/topfivrs-screens/topfivrs-results-modal.png', title:'Modal which displays business detail and google maps API' }, 
-        { href:'img/topfivrs-screens/topfivrs-favourites.png', title:'Favourites feature' }
-      ], {
-        hideBarsDelay: 3000,
-        loopAtEnd: true
-      } );
-    } );
-  </script>
-</body>
+    </section>
+  </body>
 </html>
